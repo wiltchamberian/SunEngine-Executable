@@ -1,8 +1,8 @@
 # ☀️ SunEngine-Executable
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Language-C%2B%2B17-blue.svg" alt="C++17">
-  <img src="https://img.shields.io/badge/Scripting-Sol3%20%2F%20LuaJIT-orange.svg" alt="Sol3/LuaJIT">
+  <img src="https://img.shields.io/badge/Language-C%2B%2B17-blue.svg" alt="C++23 with module">
+  <img src="https://img.shields.io/badge/Scripting-Sol3%20%2F%20Lua-orange.svg" alt="Sol3/Lua">
   <img src="https://img.shields.io/badge/Graphics-OpenGL%204.6-red.svg" alt="OpenGL 4.6">
   <img src="https://img.shields.io/badge/Status-Early%20Access-green.svg" alt="Early Access">
 </p>
