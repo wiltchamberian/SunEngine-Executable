@@ -1,0 +1,155 @@
+[PlayerControlSystem]
+[Camera]
+mode = 1
+fovy = 60
+aspect = 1.69074
+near = 0.01
+far = 500
+orthoHeight = 10
+yaw = 1.08462
+pitch = 0.787102
+len = 1
+    [component name=TransformCom owner="bf4e34c7-99d1-4971-8556-3857d7ad3485"
+     data=[38.331,9.39419,17.8685,0,0,0,1,1,1,1]
+    ]
+[node name = "DirectionalLight" uuid = "2352d9c1-948d-4134-b2cc-1fc2b695f965"
+    [component name=TransformCom owner="2352d9c1-948d-4134-b2cc-1fc2b695f965"
+     data=[0,0,0,0,0,0,1,1,1,1]
+    ]
+
+    [component name = DirectLight owner = "2352d9c1-948d-4134-b2cc-1fc2b695f965"
+     dir = [-1.977,0.023,4.923]
+     color = [1,1,1]
+    ]
+]
+[node name = "sky" uuid = "58be7794-0333-4354-8617-d9cbc216c4e0"
+    [component name=TransformCom owner="58be7794-0333-4354-8617-d9cbc216c4e0"
+     data=[0,0,0,0,0,0,1,1,1,1]
+    ]
+
+    [component name = MeshRenderer owner = "58be7794-0333-4354-8617-d9cbc216c4e0"
+     material = "072c6d08-0a39-4ab5-a2fd-6276b4390173"
+     mesh = "fd1c0a62-1de6-4eb9-ad26-0c20be938bad"
+     facecull =0
+     depthTest =0
+     depthWrite =0
+     blend =0
+     priority =-1
+     fillMode=0
+    ]
+]
+[node name = "fruits" uuid = "58c062a1-9da1-441e-a6e7-5c00993d5e58"
+    [component name=TransformCom owner="58c062a1-9da1-441e-a6e7-5c00993d5e58"
+     data=[30,0,0,0,0,0,1,1,1,1]
+    ]
+
+    [component name = MeshRenderer owner = "58c062a1-9da1-441e-a6e7-5c00993d5e58"
+     material = "ad0e09d9-1c2c-4b5e-9e40-2514367028b8"
+     mesh = "2e5175ab-6b25-4a96-b30b-328e4814d10a"
+     texture2d = "3e9f4b69-f69b-4c60-a583-f0d9686df93e"
+     facecull =0
+     depthTest =1
+     depthWrite =1
+     blend =0
+     priority =0
+     fillMode=0
+    ]
+
+    [component name=AABB owner="58c062a1-9da1-441e-a6e7-5c00993d5e58"
+     data = [-15.943,-0.108492,-8.33333,10.7277,8.58082,11.497]
+    ]
+]
+[node name = "Ball" uuid = "710a2ae0-a3d4-4f98-bcc6-01a7ec2cbcf4"
+    [component name=TransformCom owner="710a2ae0-a3d4-4f98-bcc6-01a7ec2cbcf4"
+     data=[3.03964,1.032,0.322003,0,0,0,1,1,1,1]
+    ]
+
+    [component name = MeshRenderer owner = "710a2ae0-a3d4-4f98-bcc6-01a7ec2cbcf4"
+     material = "ad0e09d9-1c2c-4b5e-9e40-2514367028b8"
+     mesh = "cf8dd2ad-fd27-47c1-933b-f7a96c789a71"
+     texture2d = "9cace1c0-39fe-4a82-8d20-1f021f531a76"
+     facecull =1
+     depthTest =1
+     depthWrite =1
+     blend =0
+     priority =0
+     fillMode=0
+    ]
+]
+[node name = "grid" uuid = "71c81933-a715-4f17-9912-6695750dad13"
+    [component name=TransformCom owner="71c81933-a715-4f17-9912-6695750dad13"
+     data=[0,0,0,0,0,0,1,1,1,1]
+    ]
+
+    [component name = MeshRenderer owner = "71c81933-a715-4f17-9912-6695750dad13"
+     material = "b9d6172e-af9a-4bf9-b230-a8a9ea663680"
+     mesh = "df1053fa-4d76-4ca5-8357-12f1a29ef45e"
+     texture2d = "62da9e21-c2e2-45d9-b8bc-f2246744ad2b"
+     facecull =0
+     depthTest =0
+     depthWrite =0
+     blend =1
+     priority =0
+     fillMode=0
+    ]
+]
+[node name = "cube" uuid = "885cff60-a3d4-42da-923a-251ccc50ccdc"
+    [component name=TransformCom owner="885cff60-a3d4-42da-923a-251ccc50ccdc"
+     data=[4.7979,5.99978,21.2611,0,0,0,1,1,1,1]
+    ]
+
+    [component name = MeshRenderer owner = "885cff60-a3d4-42da-923a-251ccc50ccdc"
+     material = "ad0e09d9-1c2c-4b5e-9e40-2514367028b8"
+     mesh = "5ea25461-6b77-4609-9482-4c3cfa5d66a6"
+     texture2d = "9cace1c0-39fe-4a82-8d20-1f021f531a76"
+     facecull =1
+     depthTest =1
+     depthWrite =1
+     blend =0
+     priority =0
+     fillMode=0
+    ]
+
+    [component name = LuaScript owner = "885cff60-a3d4-42da-923a-251ccc50ccdc"
+     script="9835d388-956c-4cd9-bd41-bc3ecc1273fc"
+    ]
+
+    [component name=AABB owner="885cff60-a3d4-42da-923a-251ccc50ccdc"
+     data = [-0.5,-0.5,-0.5,0.5,0.5,0.5]
+    ]
+]
+[node name = "Military" uuid = "8e5a16ab-0442-40ea-94ae-2b45a893fb4d"
+    [component name=TransformCom owner="8e5a16ab-0442-40ea-94ae-2b45a893fb4d"
+     data=[14.7648,1.27032e-05,12.1601,0,0,0,1,1,1,1]
+    ]
+
+    [component name = MeshRenderer owner = "8e5a16ab-0442-40ea-94ae-2b45a893fb4d"
+     material = "ad0e09d9-1c2c-4b5e-9e40-2514367028b8"
+     mesh = "8e091419-c438-4946-af32-267738b0b91d"
+     texture2d = "99c5743e-d0ba-4a1d-805d-4204f4bfe01a"
+     facecull =1
+     depthTest =1
+     depthWrite =1
+     blend =0
+     priority =0
+     fillMode=0
+    ]
+]
+[node name = "TestBall" uuid = "9e408f69-6578-407c-beae-6c7260311bfe"
+    [component name=TransformCom owner="9e408f69-6578-407c-beae-6c7260311bfe"
+     data=[0,0,0,0,0,0,1,1,1,1]
+    ]
+
+    [component name = MeshRenderer owner = "9e408f69-6578-407c-beae-6c7260311bfe"
+     material = "ad0e09d9-1c2c-4b5e-9e40-2514367028b8"
+     mesh = "cf8dd2ad-fd27-47c1-933b-f7a96c789a71"
+     texture2d = "9cace1c0-39fe-4a82-8d20-1f021f531a76"
+     facecull =1
+     depthTest =1
+     depthWrite =1
+     blend =0
+     priority =0
+     fillMode=0
+    ]
+]
+

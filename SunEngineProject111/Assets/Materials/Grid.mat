@@ -1,0 +1,13 @@
+[Material]
+vertex="Shaders/Grid.vs"
+fragment="Shaders/Grid.fs"
+tess_control=""
+tess_eval=""
+slot=0
+instance_draw=false
+[uniforms]
+u_near: float = 0
+axis: int = 1
+u_viewPos: vec3 = [0, 0, 0]
+u_vp: mat4x4 = [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]
+u_model: mat4x4 = [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]

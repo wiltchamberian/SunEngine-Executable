@@ -1,0 +1,4 @@
+[MESH]
+version = 1.0
+type = PROCEDURAL
+vertexCount = 4

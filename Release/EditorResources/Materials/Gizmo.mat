@@ -1,0 +1,5 @@
+[Material]
+vertex="rc://Shaders/Gizmo.vs"
+fragment="rc://Shaders/Gizmo.fs"
+slot=0
+instance_draw=false

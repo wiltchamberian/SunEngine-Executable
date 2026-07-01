@@ -1,0 +1,18 @@
+[Material]
+vertex="Shaders/Sky.vs"
+fragment="Shaders/Sky1.fs"
+tess_control=""
+tess_eval=""
+slot=0
+instance_draw=false
+[uniforms]
+u_time: float = 3018.33
+u_viewPos: vec3 = [0, 0, 0]
+u_lightColor: vec3 = [0, 0, 0]
+u_lightDir: vec3 = [0, 0, 0]
+cloud0_pos: vec3 = [-0.2, 0.4, -0.1]
+cloud1_pos: vec3 = [0, 0, 0]
+u_cloud0_frame: vec4 = [0, 0.02, 0.47, 0.23]
+u_cloud1_frame: vec4 = [0, 0.26, 0.5, 0.52]
+u_vp: mat4x4 = [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]
+u_model: mat4x4 = [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]

@@ -1,0 +1,5 @@
+[Material]
+vertex="rc://Shaders/AABB.vs"
+fragment="rc://Shaders/AABB.fs"
+slot=0
+instance_draw=false
